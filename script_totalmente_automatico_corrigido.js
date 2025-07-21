@@ -187,11 +187,11 @@ function criarCardCatalogo(catalogo) {
             <div class="card-content">
                 <h3 class="card-title">${catalogo.title}</h3>
                 <p class="card-description">${catalogo.description}</p>
-                <a href="${catalogo.pdf}" class="download-button" target="_blank" rel="noopener noreferrer">
+                <a href="pdf_viewer.html?file=${encodeURIComponent(catalogo.pdf)}&title=${encodeURIComponent(catalogo.title)}" class="download-button">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                        <path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z"/>
                     </svg>
-                    Baixar PDF
+                    Ver PDF
                 </a>
             </div>
         </div>
